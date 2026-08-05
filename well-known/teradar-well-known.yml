@@ -1,0 +1,39 @@
+generated: '2026-08-05'
+method: probed
+source: live HTTP probes of the teradar.com host
+host: https://teradar.com
+note: >-
+  No RFC 8615 well-known document is published. Every path below returned an
+  HTTP 404 served by the WordPress theme (a ~35KB HTML 404 page, not a soft-200),
+  so nothing was saved. No WellKnown or SecurityTxt pointer is wired in apis.yml
+  because no document was found — recording the misses here is the evidence, not
+  a claim of coverage.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+x-evidence:
+  fetched: '2026-08-05'
+  method: curl -L, browser user-agent
+  subdomains_probed:
+  - host: api.teradar.com
+    result: NXDOMAIN (no DNS resolution)
+  - host: docs.teradar.com
+    result: NXDOMAIN (no DNS resolution)
+  - host: developer.teradar.com
+    result: NXDOMAIN (no DNS resolution)
+  - host: trust.teradar.com
+    result: NXDOMAIN (no DNS resolution)
+  - host: status.teradar.com
+    result: NXDOMAIN (no DNS resolution)

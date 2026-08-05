@@ -1,7 +1,20 @@
 aid: teradar
-name: TeraDAR
-description: 'TeraDAR is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: Teradar
+description: 'Teradar is a Boston, Massachusetts semiconductor and sensing company
+  founded in 2020 by Matthew Carey, Gregory Charvat and Nicholas Saiz that is commercializing
+  terahertz-band vision sensors for vehicles, defense and security screening. Its
+  Modular Terahertz Engine (MTE) is an all-solid-state chip architecture built from
+  proprietary transmit (TX), receive (RX) and Teracore processing silicon, delivering
+  0.13-degree native angular resolution at 300+ meters in day, night, rain, fog and
+  snow, positioned to sit alongside cameras and to displace radar and lidar in SAE
+  L1-L5 driver assistance and autonomy programs. The company emerged from stealth in
+  late 2025 with a $150M Series B led by VXI Capital with Ibex Investors, Capricorn
+  Investment Group, The Engine Ventures and Lockheed Martin Ventures, and is working
+  with global OEMs and Tier-One suppliers toward a 2028 model-year launch. Teradar is
+  a hardware and silicon company: it publishes a marketing site and product
+  specification sheets, but no public developer program, API, SDK, or machine-readable
+  interface contract.'
+image: https://teradar.com/wp-content/themes/teradar-theme/assets/images/teradar-logo-grey.svg
 url: https://raw.githubusercontent.com/api-evangelist/teradar/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +25,16 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Sensors
+- Semiconductors
+- Terahertz
+- Automotive
+- Autonomous Vehicles
+- Radar
+- Lidar
+- Perception
+- Defense
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +43,54 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://teradar.com/
+- type: Products
+  url: https://teradar.com/products/
+- type: About
+  url: https://teradar.com/company/
+- type: ContactUs
+  url: https://teradar.com/contact-us/
+- type: Careers
+  url: https://teradar.com/careers/
+- type: PrivacyPolicy
+  url: https://teradar.com/privacy-policy/
+- type: Media
+  url: https://teradar.com/media/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/teradar
+- type: YouTube
+  url: https://www.youtube.com/channel/UChtcEwZbyk1GWgO2cWNf2ew
+- type: Sitemap
+  url: https://teradar.com/sitemap_index.xml
+- type: LLMsTxt
+  url: llms/teradar-llms.txt
+- type: DomainSecurity
+  url: security/teradar-domain-security.yml
+- type: InvestorProfile
   url: https://forgeglobal.com/teradar_stock/
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Teradar sells terahertz sensor silicon and modules to automakers and defense
+    primes, not software — the whole public site is a nine-page WordPress
+    marketing brochure whose only machine-readable surfaces are a Yoast-generated
+    llms.txt and the CMS's own /wp-json/ endpoint, and api./docs./developer.
+    teradar.com do not resolve in DNS.
+  evidence:
+  - url: https://teradar.com/llms.txt
+    status: 200
+  - url: https://teradar.com/developers
+    status: 404
+  - url: https://teradar.com/openapi.json
+    status: 404
+  - url: https://teradar.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.teradar.com/
+    status: 0
+  checked: '2026-08-05'
