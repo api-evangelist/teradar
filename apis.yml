@@ -14,6 +14,17 @@ description: 'Teradar is a Boston, Massachusetts semiconductor and sensing compa
   a hardware and silicon company: it publishes a marketing site and product
   specification sheets, but no public developer program, API, SDK, or machine-readable
   interface contract.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://teradar.com/wp-content/themes/teradar-theme/assets/images/teradar-logo-grey.svg
 url: https://raw.githubusercontent.com/api-evangelist/teradar/refs/heads/main/apis.yml
 x-type: company
