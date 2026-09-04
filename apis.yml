@@ -25,6 +25,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://teradar.com/wp-content/themes/teradar-theme/assets/images/teradar-logo-grey.svg
 url: https://raw.githubusercontent.com/api-evangelist/teradar/refs/heads/main/apis.yml
 x-type: company
