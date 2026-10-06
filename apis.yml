@@ -45,7 +45,7 @@ x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.23'
 created: '2026-08-05'
-modified: '2026-08-05'
+modified: '2026-10-06'
 tags:
 - Company
 - Sensors
@@ -77,6 +77,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://teradar.com/feed/
+  type: BlogRSS
 - type: Website
   url: https://teradar.com/
 - type: Products
